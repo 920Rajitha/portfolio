@@ -21,8 +21,9 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
+
     try {
-      await axios.post("http://localhost:5000/api/contact", formData);
+      await axios.post('https://tender-education.up.railway.app/api/contact', formData);
       setStatus("✅ Message sent successfully!");
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {

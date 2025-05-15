@@ -2,9 +2,9 @@ import React from 'react';
 import CountUp from 'react-countup';
 
 const stats = [
-  { label: 'Projects', value: 35 },
-  { label: 'Clients', value: 12 },
-  { label: 'Years of Experience', value: 2 },
+  { label: 'Projects', value: 10 },
+  { label: 'Clients', value: 2 },
+  { label: 'Years of Experience', value: 1 },
 ];
 
 const StatsSection = () => {
@@ -15,7 +15,7 @@ const StatsSection = () => {
         {stats.map((item, index) => (
           <div key={index}>
             <h3 className="text-4xl font-bold text-yellow-400">
-              <CountUp end={item.value} duration={2} />+
+              <CountUp end={item.value} duration={2} />
             </h3>
             <p className="text-gray-400 mt-2">{item.label}</p>
           </div>

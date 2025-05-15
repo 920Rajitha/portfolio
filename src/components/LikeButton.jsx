@@ -7,14 +7,14 @@ const LikeButton = () => {
 
   // Fetch initial like count
   useEffect(() => {
-    fetch('http://localhost:5000/api/likes')
+    fetch('https://rajitha.site/api/likes')
       .then((res) => res.json())
       .then((data) => setLikes(data.likes));
   }, []);
 
   const handleLike = async () => {
     if (liked) return;
-    const res = await fetch('http://localhost:5000/api/likes', {
+    const res = await fetch('https://rajitha.site/api/likes', {
       method: 'POST',
     });
     const data = await res.json();
