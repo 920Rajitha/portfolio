@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
 import SocialIcons from '../components/SocialIcons';
-import StatsSection from '../components/StatsSection';
 import ServicesSection from '../components/ServicesSection';
 import WelcomeQuote from '../components/WelcomeQuote';
 import SkillsSection from '../components/SkillsSection';
@@ -17,7 +16,6 @@ const Home = () => {
     >
       <Hero/>
       <SocialIcons />
-      <StatsSection />
       <LikeButton />
       <ServicesSection />
 <WelcomeQuote />
